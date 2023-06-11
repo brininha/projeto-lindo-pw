@@ -1,0 +1,21 @@
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgb(170, 210, 255) 100%);
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.form-alignment {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 60px;
+}
+
+.imagem {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
