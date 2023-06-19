@@ -1,0 +1,16 @@
+body {
+    background: #ffe6d3;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.form-alignment {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    background: white;
+    padding: 60px;
+    box-shadow: 0 10px 20px #ffd3b1;
+}

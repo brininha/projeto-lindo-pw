@@ -1,0 +1,1 @@
+<p class="text-center footer-style">&copy 2023 DevFox. Todos os direitos reservados.</p>

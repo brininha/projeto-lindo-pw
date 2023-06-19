@@ -1,0 +1,49 @@
+.card-layout {
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card-layout:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(161, 161, 161, 0.5);
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card-head {
+    font-weight: 500;
+    color: #089;
+}
+
+.card-text {
+    letter-spacing: 0.1rem;
+    text-align: justify;
+}
+
+.card-btn {
+    background-color: #f8ca75;
+    transition: 0.2s;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn:hover {
+    text-decoration: none;
+    background-color: #cae5f7;
+    margin-left: 0.1rem;
+}
+
+.cards-title {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.card-background {
+    background-color: white;
+    color: #089;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}

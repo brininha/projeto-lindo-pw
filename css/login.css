@@ -1,21 +1,30 @@
-body {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgb(170, 210, 255) 100%);
+.form-layout {
+    background-color: #ffe0c8;
 }
 
-.col-6 {
-    padding: 0;
+.img-layout {
+    background-color: ghostwhite;
+}
+
+.left-text {
+    background-color: #ff8886;
+    color: white;
+    padding: 65px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .form-alignment {
     width: fit-content;
     height: fit-content;
-    margin: auto;
-    padding: 60px;
+    background: ghostwhite;
+    padding: 50px 70px;
+    border: solid 5px white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ffcda7;
 }
 
 .imagem {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
+    height: 100vh;
+    object-fit: cover;
 }
