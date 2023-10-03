@@ -28,3 +28,9 @@
     height: 100vh;
     object-fit: cover;
 }
+
+.btn-voltar {
+    position: absolute;
+    padding: 15px;
+    opacity: 0.5;
+}

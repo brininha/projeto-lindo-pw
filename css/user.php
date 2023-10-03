@@ -40,7 +40,11 @@
     border: none;
 }
 
-.cards-title, .cards-text, .noticia-title, .noticia-text {
+.btn:hover {
+    text-decoration: none;
+}
+
+.cards-title, .cards-text, .noticia-title, .noticia-text, .curso-title, .curso-text, .about-title {
     color: <?=$fonte?>
 }
 

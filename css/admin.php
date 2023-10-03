@@ -1,7 +1,7 @@
 <?php
     header('Content-type: text/css');
     include('../conexao.php');
-    $consulta = $connection->query('SELECT fundo, botao, fonte FROM modoAdmin');
+    $consulta = $connection->query('SELECT fundo, botao, fonte FROM modo');
     while ($linha = $consulta->fetch()) {
         $fundo = $linha['fundo'];
         $botao = $linha['botao'];
@@ -40,7 +40,11 @@
     border: none;
 }
 
-.cards-title, .cards-text, .noticia-title, .noticia-text {
+.btn:hover {
+    text-decoration: none;
+}
+
+.cards-title, .cards-text, .noticia-title, .noticia-text, .curso-title, .curso-text {
     color: <?=$fonte?>
 }
 

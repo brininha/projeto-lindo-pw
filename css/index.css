@@ -1,0 +1,25 @@
+.banner {
+    height: 80vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.topline {
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.banner-text h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(248, 168, 82);
+}
+
+.banner-text p {
+    width: 90%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.animation_duration {
+    --animate-duration: 4s;
+}
