@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Verificando login -->
+    <?php
+        include("../verificar-login.php");
+    ?>
     <!-- Links de todos os arquivos CSS -->
     <?php
         include("../links.php");
     ?>
     <!-- Incluindo tema -->
     <?php
-        include('../conexao.php');
-        $consulta = $connection->query('SELECT tema, imagem FROM modoAdmin');
-        while ($linha = $consulta->fetch()) {
-            $tema = $linha['tema'];
-            $imagem = $linha['imagem'];
-        }
+        include('../modo.php');
     ?>
     <!-- Links específicos -->
     <link rel="stylesheet" href="../css/admin.php">
@@ -33,18 +32,19 @@
             <?php
                 include('../conexao.php');
 
-                $consulta = $connection->query("SELECT nome, email, telefone, assunto, mensagem FROM contato ORDER BY id DESC");
+                $consulta = $connection->query("SELECT idContato, nomeContato, emailContato, telefoneContato, assuntoContato, mensagemContato FROM contato ORDER BY idContato DESC");
 
                 while ($linha = $consulta->fetch()) {
                     echo 
                     '<div class="col">
                         <div class="card h-100">
-                            <div class="card-header card-background">' . $linha[0] . '</div>
+                            <div class="card-header card-background">' . $linha['nomeContato'] . '</div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item card-text">E-mail: ' . $linha[1] . '</li>
-                                <li class="list-group-item card-text">Telefone: ' . $linha[2] . '</li>
-                                <li class="list-group-item card-text">Assunto: ' . $linha[3] . '</li>
-                                <li class="list-group-item card-text">' . $linha[4] . '</li>
+                                <li class="list-group-item card-text">E-mail: ' . $linha['emailContato'] . '</li>
+                                <li class="list-group-item card-text">Telefone: ' . $linha['telefoneContato'] . '</li>
+                                <li class="list-group-item card-text">Assunto: ' . $linha['assuntoContato'] . '</li>
+                                <li class="list-group-item card-text">' . $linha['mensagemContato'] . '</li>
+                                <li class="list-group-item card-text"><a href="./excluir-mensagem.php?id=' . $linha['idContato'] . '" class="btn btn-light btn-sm">Apagar</a></li>
                             </ul>
                         </div>
                     </div>';

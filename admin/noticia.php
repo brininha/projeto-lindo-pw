@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Verificando login -->
+    <?php
+        include("../verificar-login.php");
+    ?>
     <!-- Links de todos os arquivos CSS -->
     <?php
         include("../links.php");
     ?>
     <!-- Incluindo tema -->
     <?php
-        include('../conexao.php');
-        $consulta = $connection->query('SELECT tema, imagem FROM modoAdmin');
-        while ($linha = $consulta->fetch()) {
-            $tema = $linha['tema'];
-            $imagem = $linha['imagem'];
-        }
+        include('../modo.php');
     ?>
     <!-- Incluindo notícias -->
     <?php
         $id = $_GET['id'];
-        $consulta2 = $connection->query("SELECT titulo, autor, imagem, texto FROM noticia WHERE id = $id");
+        $consulta2 = $connection->query("SELECT tituloNoticia, autorNoticia, imagemNoticia, textoNoticia FROM noticia WHERE idNoticia = $id");
         while ($linha = $consulta2->fetch()) {
-            $titulo = $linha['titulo'];
-            $autor = $linha['autor'];
-            $imgNoticia = $linha['imagem'];
-            $texto = $linha['texto'];
+            $titulo = $linha['tituloNoticia'];
+            $autor = $linha['autorNoticia'];
+            $imgNoticia = $linha['imagemNoticia'];
+            $texto = $linha['textoNoticia'];
         }
     ?>
     <!-- Links específicos -->
@@ -48,10 +47,10 @@
             <div class="noticia-text"><?=$texto?></div>
         </div>
         <br>
-        <form action="./deletar-noticia.php" method="post">
-            <input type="hidden" name="id" value="<?=$id?>">
-            <button type="submit" class="btn btn-danger">Excluir notícia</button>
-        </form>
+        <p class="d-inline-flex gap-1">
+            <a href="./excluir-noticia.php?id=<?=$id?>" class="btn btn-secondary" role="button">Excluir notícia</a>
+            <a href="./alterar-noticia.php?id=<?=$id?>" class="btn btn-secondary" role="button">Alterar notícia</a>
+        </p>
     </div>
     <br>
     <!-- Rodapé -->

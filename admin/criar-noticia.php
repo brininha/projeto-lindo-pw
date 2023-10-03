@@ -1,5 +1,5 @@
 <?php
-    header('Location: http://localhost/projeto-lindo/admin/nova-noticia.php');
+    header('Location: http://localhost/projeto-lindo/admin/adicionar-noticia.php');
     include('../conexao.php');
 
     // Catando todos os dados do form através do método POST
@@ -10,7 +10,7 @@
     $texto = $_POST['noticia-texto'];
 
      // Passando a instrução para criar novos dados
-     $command = "INSERT INTO noticia (titulo, autor, imagem, resumo, texto) VALUES ('$titulo', '$autor', '$imagem', '$resumo', '$texto')";
+     $command = "INSERT INTO noticia (tituloNoticia, autorNoticia, imagemNoticia, resumoNoticia, textoNoticia) VALUES ('$titulo', '$autor', '$imagem', '$resumo', '$texto')";
 
      // Enviando a instrução para o banco
      $connection->exec($command);

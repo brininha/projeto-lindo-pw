@@ -7,14 +7,17 @@
     <div class="collapse navbar-collapse animate__animated animate__slideInLeft" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="./index.php">Home</a>
+        <a class="nav-link" href="./index.php#noticias">Notícias</a>
         <a class="nav-link" href="./contato.php">Mensagens</a>
         <a class="nav-link" href="./registros.php">Usuários cadastrados</a>
+        <a class="nav-link" href="./cursos.php">Cursos</a>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasPerfil" aria-controls="offcanvasPerfil">Perfil</a>
       </div>
     </div>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end animate__animated animate__slideInRight">
-      <button class="btn btn-outline-primary btn-border-bg" type="button"><a class="nav-link" href="../user/index.php">Desconectar-se</a></button>
+      <button class="btn btn-outline-primary btn-border-bg" type="button"><a class="nav-link" href="../logout.php">Desconectar-se</a></button>
       <button type="button" class="btn btn-special">
-        <form action="./mode.php" method="post">
+        <form action="../alterar-modo.php" method="post">
           <select class="form-select form-select-sm" aria-label="Default select example" name="mode" onchange="this.form.submit()">
             <option selected>Modo</option>
             <option value="1">🌞</option>
@@ -26,3 +29,7 @@
     </div>
   </div>
 </nav>
+
+<?php
+  include('./perfil.php');
+?>

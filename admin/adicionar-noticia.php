@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Verificando login -->
+    <?php
+        include("../verificar-login.php");
+    ?>
     <!-- Links de todos os arquivos CSS -->
     <?php
         include("../links.php");
     ?>
     <!-- Incluindo tema -->
     <?php
-        include('../conexao.php');
-        $consulta = $connection->query('SELECT tema, imagem FROM modoAdmin');
-        while ($linha = $consulta->fetch()) {
-            $tema = $linha['tema'];
-            $imagem = $linha['imagem'];
-        }
+        include('../modo.php');
     ?>
     <!-- Links específicos -->
     <link rel="stylesheet" href="../css/admin.php">
@@ -34,7 +33,7 @@
                 <td class="align-middle">
                     <form action='./criar-noticia.php' method='post'>
                         <div class="row">
-                            <h2 class="mb-4 text-center">Crie uma nova notícia</h2>
+                            <h2 class="mb-4 text-center noticia-title">Crie uma nova notícia</h2>
                             <div class="col">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="input1" placeholder="Título" name="noticia-titulo" required autocomplete="off">
