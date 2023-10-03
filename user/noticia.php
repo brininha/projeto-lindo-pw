@@ -10,22 +10,17 @@
     ?>
     <!-- Incluindo tema -->
     <?php
-        include('../conexao.php');
-        $consulta = $connection->query('SELECT tema, imagem FROM modo');
-        while ($linha = $consulta->fetch()) {
-            $tema = $linha['tema'];
-            $imagem = $linha['imagem'];
-        }
+        include('../modo.php');
     ?>
     <!-- Incluindo notícias -->
     <?php
         $id = $_GET['id'];
-        $consulta2 = $connection->query("SELECT titulo, autor, imagem, texto FROM noticia WHERE id = $id");
+        $consulta2 = $connection->query("SELECT tituloNoticia, autorNoticia, imagemNoticia, textoNoticia FROM noticia WHERE idNoticia = $id");
         while ($linha = $consulta2->fetch()) {
-            $titulo = $linha['titulo'];
-            $autor = $linha['autor'];
-            $imgNoticia = $linha['imagem'];
-            $texto = $linha['texto'];
+            $titulo = $linha['tituloNoticia'];
+            $autor = $linha['autorNoticia'];
+            $imgNoticia = $linha['imagemNoticia'];
+            $texto = $linha['textoNoticia'];
         }
     ?>
     <!-- Links específicos -->

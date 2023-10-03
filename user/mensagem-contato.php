@@ -10,7 +10,7 @@
     $mensagem = $_POST['contato-mensagem'];
 
     // Passando a instrução para criar novos dados
-    $command = "INSERT INTO contato (nome, email, assunto, mensagem, telefone) VALUES ('$nome', '$email', '$assunto', '$mensagem', '$telefone')";
+    $command = "INSERT INTO contato (nomeContato, emailContato, assuntoContato, mensagemContato, telefoneContato) VALUES ('$nome', '$email', '$assunto', '$mensagem', '$telefone')";
 
     // Enviando a instrução para o banco
     $connection->exec($command);

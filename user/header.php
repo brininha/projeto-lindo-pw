@@ -7,14 +7,16 @@
     <div class="collapse navbar-collapse animate__animated animate__slideInLeft" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="./index.php">Home</a>
+        <a class="nav-link" href="./index.php#noticias">Notícias</a>
         <a class="nav-link" href="./contato.php">Fale conosco</a>
+        <a class="nav-link" href="./sobre.php">Sobre nós</a>
       </div>
     </div>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end animate__animated animate__slideInRight">
       <button class="btn btn-<?=$tema?> me-md-1" type="button"><a class="nav-link" href="./login.php">Conectar-se</a></button>
       <button class="btn btn-outline-primary btn-border-bg" type="button"><a class="nav-link" href="./signup.php">Cadastrar-se</a></button>
       <button type="button" class="btn btn-special">
-        <form action="./mode.php" method="post">
+        <form action="../alterar-modo.php" method="post">
           <select class="form-select form-select-sm" aria-label="Default select example" name="mode" onchange="this.form.submit()">
             <option selected>Modo</option>
             <option value="1">🌞</option>
