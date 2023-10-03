@@ -4,42 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Verificando login -->
+    <?php
+        include("../verificar-login.php");
+    ?>
     <!-- Links de todos os arquivos CSS -->
     <?php
         include("../links.php");
     ?>
     <!-- Incluindo tema -->
     <?php
-        include('../conexao.php');
-        $consulta = $connection->query('SELECT tema, imagem FROM modo');
-        while ($linha = $consulta->fetch()) {
-            $tema = $linha['tema'];
-            $imagem = $linha['imagem'];
-        }
+        include('../modo.php');
     ?>
     <!-- Incluindo notícias -->
     <?php
         $id = $_GET['id'];
-        $consulta2 = $connection->query("SELECT titulo, autor, imagem, texto FROM noticia WHERE id = $id");
+        $consulta2 = $connection->query("SELECT tituloNoticia, autorNoticia, imagemNoticia, textoNoticia FROM noticia WHERE idNoticia = $id");
         while ($linha = $consulta2->fetch()) {
-            $titulo = $linha['titulo'];
-            $autor = $linha['autor'];
-            $imgNoticia = $linha['imagem'];
-            $texto = $linha['texto'];
-        }
-    ?>
-    <!-- Incluindo perfil -->
-    <?php
-        $consulta3 = $connection->query('SELECT id, nome, sobrenome, email, dataNasc, sexo, senha, imagem FROM registroAtual');
-        while ($linha = $consulta3->fetch()) {
-            $id = $linha['id'];
-            $nome = $linha['nome'];
-            $sobrenome = $linha['sobrenome'];
-            $email = $linha['email'];
-            $dataNasc = $linha['dataNasc'];
-            $sexo = $linha['sexo'];
-            $senha = $linha['senha'];
-            $imagemPerfil = $linha['imagem'];
+            $titulo = $linha['tituloNoticia'];
+            $autor = $linha['autorNoticia'];
+            $imgNoticia = $linha['imagemNoticia'];
+            $texto = $linha['textoNoticia'];
         }
     ?>
     <!-- Links específicos -->
