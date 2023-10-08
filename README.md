@@ -15,7 +15,7 @@ Passos:
 
 3. Vá em http://localhost/phpmyadmin e importe o banco de dados que está dentro da pasta "sql" do projeto.
 
-4. Feito isso, o projeto está pronto para ser visualizado, basta acessar http://localhost/projeto-lindo no navegador.
+4. Feito isso, o projeto está pronto para ser visualizado, basta acessar http://localhost/projeto-lindo-pw no navegador.
 
 E tcharam! 🙌
 
