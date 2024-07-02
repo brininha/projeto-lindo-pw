@@ -3,7 +3,7 @@
 
 ## Guia de uso
 
-Recursos imprescendíveis:
+Recursos imprescIndíveis:
 - PHP
 - MySQL
 
