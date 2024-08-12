@@ -28,7 +28,7 @@
         include("./header.php");
     ?>
     <!-- Boas-vindas -->
-    <div class="container">
+    <div class="container-xxl">
         <div class="row banner uk-flex uk-flex-middle">
             <div class="col banner-text">
                 <span class="topline noticia-text">Olá!</span>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!-- Cards -->
-    <div class="container card-container" id="noticias">
+    <div class="container-xxl card-container" id="noticias">
         <h2 class="cards-title text-center">Notícias recentes</h2>
         <p class="text-center cards-text">Veja as nossas últimas boas novas!</p>
         <div class="row row-cols-1 row-cols-md-3 g-4">

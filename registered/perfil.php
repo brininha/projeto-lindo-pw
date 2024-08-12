@@ -7,7 +7,7 @@
   <div class="offcanvas-body">
     <div class="text-center">
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalFoto">
-        <img src="<?=$_SESSION['imagem']?>" style="width: 200px; height: 200px; border-radius: 100%; object-fit: cover;">
+        <img src="../images/<?=$_SESSION['imagem']?>" style="width: 200px; height: 200px; border-radius: 100%; object-fit: cover;">
       </button>
       <br><br>
       <p><b>Usuário:</b> <?=$_SESSION['nome']?> <?=$_SESSION['sobrenome']?></p>
@@ -33,11 +33,11 @@
         <h1 class="modal-title fs-5" id="modalLabelFoto">Foto de perfil</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="../alterar-foto.php" method="post">
+      <form action="../gravar-imagem.php" method="post" enctype="multipart/form-data">
         <div class="modal-body">
           <div class="mb-3">
-            <label for="img" class="form-label">Alterar URL da imagem:</label>
-            <input type="text" class="form-control" id="img" name="foto" autocomplete="off">
+            <label for="img" class="form-label">Alterar imagem:</label>
+            <input type="file" class="form-control" id="img" name="foto" required>
             <input type="hidden" name="id" value="<?=$_SESSION['id']?>">
           </div>
         </div>

@@ -42,7 +42,7 @@
         include("./header.php");
     ?>
     <!-- Todos os dados da aula -->
-    <div class="container mt-5">
+    <div class="container-xxl mt-5">
         <div class="clearfix">
             <?php
             if ($img != "") {

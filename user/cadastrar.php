@@ -35,6 +35,7 @@
                 $_SESSION['sexo'] = $linha['sexoRegistro'];
                 $_SESSION['senha'] = $linha['senhaRegistro'];
                 $_SESSION['imagem'] = $linha['imagemRegistro'];
+                $_SESSION['nivel'] = $linha['nivelRegistro'];
                 $_SESSION['insta'] = $linha['instaRegistro'];
                 $_SESSION['linkedin'] = $linha['linkedinRegistro'];
                 $_SESSION['github'] = $linha['githubRegistro'];

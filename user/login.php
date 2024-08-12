@@ -44,7 +44,7 @@
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="senha" required autocomplete="off">
                                         <label for="floatingPassword">Senha</label>
                                     </div>
-                                    <button type="submit" class="btn btn-light">Entrar</button>
+                                    <button type="submit" class="btn btn-dark">Entrar</button>
                                 </form>
                             </div>
                         </td>
@@ -52,7 +52,7 @@
                 </table>
             </div>
             <div class="col-5 img-layout animate__animated animate__fadeIn">
-                <img class="imagem" src="../images/login-alternativo.png">
+                <img class="imagem" src="../images/login2.png">
             </div>
         </div>      
     </div>

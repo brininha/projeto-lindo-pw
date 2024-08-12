@@ -26,7 +26,7 @@
     <?php
         include("./header.php");
     ?>
-    <div class="container">
+    <div class="container-xxl">
         <h3 class="text-center cards-title" style="margin-bottom: 18px">Últimas mensagens</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php

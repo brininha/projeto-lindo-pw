@@ -39,7 +39,7 @@
     ?>
     <br>
     <!-- Todos os dados da notícia -->
-    <div class="container">
+    <div class="container-xxl">
         <h2 class="text-center noticia-title"><?=$titulo?></h2>
         <p class="text-center noticia-text">Escrito por: <?=$autor?></p>
         <div class="clearfix">

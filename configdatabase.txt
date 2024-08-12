@@ -1,0 +1,4 @@
+dbname: id21866543_devfoxdatabase
+user: id21866543_sabrina
+host: localhost
+pass: Devfox123.

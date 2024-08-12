@@ -1,5 +1,5 @@
 body {
-    background: #ffe6d3;
+    background: #ffaf72;
 }
 
 .container-fluid {
@@ -12,7 +12,7 @@ body {
     margin: auto;
     background: white;
     padding: 60px;
-    box-shadow: 0 10px 20px #ffd3b1;
+    box-shadow: 15px 15px #ffd3b1;
 }
 
 .btn-voltar {

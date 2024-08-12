@@ -29,15 +29,14 @@
         include("./header.php");
     ?>
     <!-- Cards -->
-    <div class="container">
-        <h2 class="about-title text-center mt-5 mb-5">As desenvolvedoras</h2>
+    <div class="container-xxl uk-flex uk-flex-middle uk-flex-center" style="height: 100vh">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php
                 while ($linha = $consulta->fetch()) {
             ?>
             <div class="col">
                 <div class="card card-about">
-                    <img style="width: 250px; height: 250px; border-radius: 100%; margin: auto" src="<?=$linha['imagemRegistro']?>">
+                    <img style="width: 250px; height: 250px; border-radius: 100%; margin: auto" src="../images/<?=$linha['imagemRegistro']?>">
                     <div class="card-body">
                         <h5 class="card-title text-center about-title"><?=$linha['nomeRegistro']?></h5>
                         <div class="social-media">
@@ -54,7 +53,6 @@
         </div>
     </div>
     <!-- Rodapé -->
-    <div class="mb-5"></div>
     <?php
         include('./footer.php');
     ?>

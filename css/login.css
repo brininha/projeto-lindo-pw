@@ -1,5 +1,5 @@
 .form-layout {
-    background-color: #ffe0c8;
+    background-color: #ffaf72;
 }
 
 .img-layout {
@@ -7,7 +7,7 @@
 }
 
 .left-text {
-    background-color: #ff8886;
+    background-color: #1b1b1b;
     color: white;
     padding: 65px;
     border-top-left-radius: 10px;
@@ -19,9 +19,9 @@
     height: fit-content;
     background: ghostwhite;
     padding: 50px 70px;
-    border: solid 5px white;
+    border: solid 1px white;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #ffcda7;
+    box-shadow: 15px 15px #ffcda7;
 }
 
 .imagem {

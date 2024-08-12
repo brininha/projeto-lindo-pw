@@ -28,6 +28,7 @@
         $_SESSION['sexo'] = $sexo;
         $_SESSION['senha'] = $senha;
         $_SESSION['imagem'] = $img;
+        $_SESSION['nivel'] = $nivel;
         $_SESSION['insta'] = $insta;
         $_SESSION['linkedin'] = $linkedin;
         $_SESSION['github'] = $github;

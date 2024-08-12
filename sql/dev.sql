@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2023 at 11:31 PM
+-- Generation Time: Oct 20, 2023 at 04:26 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -241,7 +241,7 @@ CREATE TABLE `registrado` (
   `dataNascRegistro` date NOT NULL,
   `sexoRegistro` varchar(20) NOT NULL,
   `senhaRegistro` varchar(100) NOT NULL,
-  `imagemRegistro` varchar(1000) NOT NULL DEFAULT '../images/perfil.png',
+  `imagemRegistro` varchar(1000) NOT NULL DEFAULT 'perfil.png',
   `nivelRegistro` int(11) NOT NULL DEFAULT 1,
   `instaRegistro` varchar(200) NOT NULL DEFAULT '',
   `linkedinRegistro` varchar(200) NOT NULL DEFAULT '',
@@ -253,16 +253,16 @@ CREATE TABLE `registrado` (
 --
 
 INSERT INTO `registrado` (`idRegistro`, `nomeRegistro`, `sobrenomeRegistro`, `emailRegistro`, `dataNascRegistro`, `sexoRegistro`, `senhaRegistro`, `imagemRegistro`, `nivelRegistro`, `instaRegistro`, `linkedinRegistro`, `githubRegistro`) VALUES
-(2, 'Monique Vitória', 'Mota', 'moniquemota@gmail.com', '2006-05-24', 'Feminino', 'momo123', 'https://i.pinimg.com/564x/78/91/b0/7891b09aab654205548a555c619a062e.jpg', 2, '', '', ''),
-(3, 'Isabel', 'Santos', 'isinha@gmail.com', '2006-04-02', 'Feminino', 'isa123', 'https://i.pinimg.com/564x/dd/7d/5d/dd7d5d0ed41968e0df2819a7cae4ff19.jpg', 2, 'https://www.instagram.com/isouzxx/', '', 'https://github.com/Isinha-s2'),
-(4, 'Sabrina', 'Cristan', 'sabrina@gmail.com', '2006-07-13', 'Feminino', 'sasa123', 'https://i.pinimg.com/564x/5e/fb/05/5efb05d12ccc83889f618f62c1724830.jpg', 2, 'https://www.instagram.com/sabrinacristan/', 'https://www.linkedin.com/in/sabrina-cristan-4a850b234/', 'https://github.com/brininha'),
-(6, 'Ludimyla', 'Brito', 'ludi@yahoo.com.br', '2006-12-31', 'Feminino', 'ludi123', 'https://i.pinimg.com/564x/77/53/74/77537402bbcc2843160a06e640c21541.jpg', 1, '', '', ''),
-(7, 'Larissa Esther', 'Matos', 'larissinha@hotmail.com', '2006-08-17', 'Feminino', 'lari123', 'https://i.pinimg.com/564x/58/b9/12/58b91260ecded995375ade229e2ac1d0.jpg', 1, '', '', 'https://github.com/larissaesther'),
-(8, 'Dandara', 'Ramos', 'danda@gmail.com', '2006-05-20', 'Feminino', 'dan123', 'https://i.pinimg.com/564x/27/9f/ae/279fae3207e0f7fd5e6b8ecd4c7bffbc.jpg', 1, '', '', ''),
-(9, 'Karina', 'Ferreira', 'kari@gmail.com.br', '1998-04-02', 'Feminino', 'ka123', 'https://i.pinimg.com/564x/91/c5/ef/91c5efd4390552859ebd00217e8d5ed4.jpg', 1, '', '', ''),
-(10, 'Maria', 'José', 'mariajose@gmail.com', '2004-02-29', 'Feminino', 'maria123', 'https://i.pinimg.com/564x/08/dc/e9/08dce9f79ff0aa5bde98a110bf01785a.jpg', 1, '', '', ''),
-(11, 'Fodrigo', 'Raro', 'fodriguinho@gmail.com', '1973-10-20', 'Masculino', 'raro123', 'https://tvnewsbrasilcom.files.wordpress.com/2018/01/images-9.jpeg', 1, '', '', ''),
-(14, 'Allan', 'Vidal Negreiros', 'allanegreiros@gmail.com', '1973-03-10', 'Masculino', 'allan123', '../images/perfil.png', 1, '', '', '');
+(2, 'Monique Vitória', 'Mota', 'moniquemota@gmail.com', '2006-05-24', 'Feminino', 'momo123', 'user02.jpg', 2, '', '', ''),
+(3, 'Isabel', 'Santos', 'isinha@gmail.com', '2006-04-02', 'Feminino', 'isa123', 'user03.jpg', 2, 'https://www.instagram.com/isouzxx/', '', 'https://github.com/Isinha-s2'),
+(4, 'Sabrina', 'Cristan', 'sabrina@gmail.com', '2006-07-13', 'Feminino', 'sasa123', 'user04.jpg', 2, 'https://www.instagram.com/sabrinacristan/', 'https://www.linkedin.com/in/sabrina-cristan-4a850b234/', 'https://github.com/brininha'),
+(6, 'Ludimyla', 'Brito', 'ludi@yahoo.com.br', '2006-12-31', 'Feminino', 'ludi123', 'user06.jpg', 1, '', '', ''),
+(7, 'Larissa Esther', 'Matos', 'larissinha@hotmail.com', '2006-08-17', 'Feminino', 'lari123', 'user07.jpg', 1, '', '', 'https://github.com/larissaesther'),
+(8, 'Dandara', 'Ramos', 'danda@gmail.com', '2006-05-20', 'Feminino', 'dan123', 'user08.jpg', 1, '', '', ''),
+(9, 'Karina', 'Ferreira', 'kari@gmail.com.br', '1998-04-02', 'Feminino', 'ka123', 'user09.jpg', 1, '', '', ''),
+(10, 'Maria', 'José', 'mariajose@gmail.com', '2004-02-29', 'Feminino', 'maria123', 'user10.png', 1, '', '', ''),
+(11, 'Fodrigo', 'Raro', 'fodriguinho@gmail.com', '1973-10-20', 'Masculino', 'raro123', 'user11.jpeg', 1, '', '', ''),
+(14, 'Allan', 'Vidal Negreiros', 'allanegreiros@gmail.com', '1973-03-10', 'Masculino', 'allan123', 'perfil.png', 1, '', '', '');
 
 --
 -- Indexes for dumped tables
@@ -324,13 +324,13 @@ ALTER TABLE `aula`
 -- AUTO_INCREMENT for table `aulaconcluida`
 --
 ALTER TABLE `aulaconcluida`
-  MODIFY `idAulaConcluida` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idAulaConcluida` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `contato`
 --
 ALTER TABLE `contato`
-  MODIFY `idContato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `idContato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `curso`
@@ -342,7 +342,7 @@ ALTER TABLE `curso`
 -- AUTO_INCREMENT for table `matricula`
 --
 ALTER TABLE `matricula`
-  MODIFY `idMatricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `idMatricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `noticia`
@@ -354,7 +354,7 @@ ALTER TABLE `noticia`
 -- AUTO_INCREMENT for table `registrado`
 --
 ALTER TABLE `registrado`
-  MODIFY `idRegistro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idRegistro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

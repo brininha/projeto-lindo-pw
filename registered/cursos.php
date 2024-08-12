@@ -41,7 +41,7 @@
         include("./header.php");
     ?>
     <!-- Matrículas -->
-    <div class="container">
+    <div class="container-xxl">
         <h2 class="text-center cards-title">Meus cursos</h2>
         <p class="text-center cards-text">Todas as suas matrículas</p>
         <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -70,7 +70,7 @@
         </div>
     </div>
     <!-- Cards dos cursos -->
-    <div class="container">
+    <div class="container-xxl">
         <h2 class="text-center cards-title">Cursos</h2>
         <p class="text-center cards-text">Dê uma olhada nos nossos cursos gratuitos e de qualidade!</p>
         <div class="row row-cols-1 row-cols-md-4 g-4">

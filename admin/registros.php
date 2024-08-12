@@ -39,7 +39,7 @@
     <?php
         include("./header.php");
     ?>
-    <div class="container">
+    <div class="container-xxl">
         <table class="table align-middle cards-text">
             <thead>
                 <tr><td colspan="9"><h3 class="text-center cards-title" style="margin-bottom: 18px">Últimos registros</h3></td></tr>
@@ -74,7 +74,7 @@
                         }
                 ?>
                 <tr>
-                <td><img src="<?=$linha['imagemRegistro']?>" style="width: 80px; height: 80px; object-fit: cover;"></td>
+                <td><img src="../images/<?=$linha['imagemRegistro']?>" style="width: 80px; height: 80px; object-fit: cover;"></td>
                 <td><?=$linha['idRegistro']?></td>
                 <td><?=$linha['nomeRegistro']?></td>
                 <td><?=$linha['sobrenomeRegistro']?></td>

@@ -41,7 +41,7 @@
         include("./header.php");
     ?>
     <!-- Boas-vindas -->
-    <div class="container">
+    <div class="container-xxl">
         <div class="row banner uk-flex uk-flex-middle">
             <div class="col banner-text">
                 <span class="topline noticia-text">Olá!</span>
@@ -55,7 +55,7 @@
         </div>
     </div>
     <!-- Painel das notícias -->
-    <div class="container" id="noticias">
+    <div class="container-xxl" id="noticias">
         <table class="table align-middle cards-text">
             <thead>
                 <tr><td colspan="4"><h3 class="text-center cards-title" style="margin-bottom: 18px">Listagem de notícias</h3></td></tr>

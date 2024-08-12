@@ -55,7 +55,7 @@
         include("./header.php");
     ?>
     <!-- Todos os dados do curso -->
-    <div class="container mt-5">
+    <div class="container-xxl mt-5">
         <div class="clearfix">
             <img src="<?=$img?>" class="col-md-3 float-md-end mb-5 ms-md-5" style="border-radius: 10px">
             <h2 class="curso-title"><?=$titulo?></h2>
